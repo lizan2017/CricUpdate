@@ -7,15 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A08FB131EDF0795009A297D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A08FB121EDF0795009A297D /* SWRevealViewController.m */; };
+		1A18A0891EE68B8C004E998B /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18A0881EE68B8C004E998B /* SideMenuTableViewCell.swift */; };
+		1A1A5BDF1EDFDD9A00753DFB /* FetchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A5BDE1EDFDD9A00753DFB /* FetchVC.swift */; };
+		1A1A5BE31EDFF1B800753DFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A5BE21EDFF1B800753DFB /* GoogleService-Info.plist */; };
+		1A1ABA0F1EE19BC60080B5AD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1ABA0E1EE19BC60080B5AD /* Login.storyboard */; };
+		1A1ABA111EE19DE70080B5AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1ABA101EE19DE70080B5AD /* LoginViewController.swift */; };
+		1A20487B1EE2C4FB00FA8957 /* SignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A20487A1EE2C4FB00FA8957 /* SignUp.storyboard */; };
+		1A20487D1EE2C7FF00FA8957 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A20487C1EE2C7FF00FA8957 /* SignUpViewController.swift */; };
+		1A2048881EE2FF4E00FA8957 /* Email+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2048861EE2FF4E00FA8957 /* Email+CoreDataClass.swift */; };
+		1A2048891EE2FF4E00FA8957 /* Email+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2048871EE2FF4E00FA8957 /* Email+CoreDataProperties.swift */; };
 		1A5BF3531EDEF92800053F2F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BF3521EDEF92800053F2F /* AppDelegate.swift */; };
 		1A5BF3551EDEF92800053F2F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BF3541EDEF92800053F2F /* ViewController.swift */; };
 		1A5BF3581EDEF92800053F2F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5BF3561EDEF92800053F2F /* Main.storyboard */; };
 		1A5BF35B1EDEF92800053F2F /* CricNp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BF3591EDEF92800053F2F /* CricNp.xcdatamodeld */; };
 		1A5BF35D1EDEF92800053F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A5BF35C1EDEF92800053F2F /* Assets.xcassets */; };
 		1A5BF3601EDEF92800053F2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5BF35E1EDEF92800053F2F /* LaunchScreen.storyboard */; };
+		1A5BF36A1EDF028800053F2F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BF3691EDF028800053F2F /* SideMenuViewController.swift */; };
+		851990C15C859E48BC051B4D /* Pods_CricNp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9154975EAF88E30DAA6842 /* Pods_CricNp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A08FB101EDF0795009A297D /* CricNp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CricNp-Bridging-Header.h"; sourceTree = "<group>"; };
+		1A08FB111EDF0795009A297D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		1A08FB121EDF0795009A297D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		1A18A0881EE68B8C004E998B /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		1A1A5BDE1EDFDD9A00753DFB /* FetchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchVC.swift; sourceTree = "<group>"; };
+		1A1A5BE21EDFF1B800753DFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		1A1ABA0E1EE19BC60080B5AD /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		1A1ABA101EE19DE70080B5AD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1A20487A1EE2C4FB00FA8957 /* SignUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SignUp.storyboard; sourceTree = "<group>"; };
+		1A20487C1EE2C7FF00FA8957 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		1A2048861EE2FF4E00FA8957 /* Email+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Email+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A2048871EE2FF4E00FA8957 /* Email+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Email+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		1A5BF34F1EDEF92800053F2F /* CricNp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CricNp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5BF3521EDEF92800053F2F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A5BF3541EDEF92800053F2F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +48,10 @@
 		1A5BF35C1EDEF92800053F2F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1A5BF35F1EDEF92800053F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A5BF3611EDEF92800053F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A5BF3691EDF028800053F2F /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		8E9154975EAF88E30DAA6842 /* Pods_CricNp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CricNp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B62866A2707A74EDD4EC9D9A /* Pods-CricNp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricNp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CricNp/Pods-CricNp.debug.xcconfig"; sourceTree = "<group>"; };
+		E0ED181A0FB81532A616A389 /* Pods-CricNp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricNp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CricNp/Pods-CricNp.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				851990C15C859E48BC051B4D /* Pods_CricNp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +71,8 @@
 			children = (
 				1A5BF3511EDEF92800053F2F /* CricNp */,
 				1A5BF3501EDEF92800053F2F /* Products */,
+				5366F253FE2DE6B939A1BA73 /* Pods */,
+				7B75104F291D41D03CB6F5A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,13 +89,43 @@
 			children = (
 				1A5BF3521EDEF92800053F2F /* AppDelegate.swift */,
 				1A5BF3541EDEF92800053F2F /* ViewController.swift */,
+				1A2048861EE2FF4E00FA8957 /* Email+CoreDataClass.swift */,
+				1A2048871EE2FF4E00FA8957 /* Email+CoreDataProperties.swift */,
+				1A5BF3691EDF028800053F2F /* SideMenuViewController.swift */,
+				1A18A0881EE68B8C004E998B /* SideMenuTableViewCell.swift */,
+				1A1A5BDE1EDFDD9A00753DFB /* FetchVC.swift */,
 				1A5BF3561EDEF92800053F2F /* Main.storyboard */,
+				1A1ABA101EE19DE70080B5AD /* LoginViewController.swift */,
+				1A1ABA0E1EE19BC60080B5AD /* Login.storyboard */,
+				1A20487A1EE2C4FB00FA8957 /* SignUp.storyboard */,
+				1A20487C1EE2C7FF00FA8957 /* SignUpViewController.swift */,
 				1A5BF35C1EDEF92800053F2F /* Assets.xcassets */,
 				1A5BF35E1EDEF92800053F2F /* LaunchScreen.storyboard */,
+				1A08FB111EDF0795009A297D /* SWRevealViewController.h */,
+				1A08FB121EDF0795009A297D /* SWRevealViewController.m */,
+				1A1A5BE21EDFF1B800753DFB /* GoogleService-Info.plist */,
 				1A5BF3611EDEF92800053F2F /* Info.plist */,
 				1A5BF3591EDEF92800053F2F /* CricNp.xcdatamodeld */,
+				1A08FB101EDF0795009A297D /* CricNp-Bridging-Header.h */,
 			);
 			path = CricNp;
+			sourceTree = "<group>";
+		};
+		5366F253FE2DE6B939A1BA73 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B62866A2707A74EDD4EC9D9A /* Pods-CricNp.debug.xcconfig */,
+				E0ED181A0FB81532A616A389 /* Pods-CricNp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		7B75104F291D41D03CB6F5A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8E9154975EAF88E30DAA6842 /* Pods_CricNp.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +135,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1A5BF3641EDEF92800053F2F /* Build configuration list for PBXNativeTarget "CricNp" */;
 			buildPhases = (
+				52B5941144783058AEE793E1 /* [CP] Check Pods Manifest.lock */,
 				1A5BF34B1EDEF92800053F2F /* Sources */,
 				1A5BF34C1EDEF92800053F2F /* Frameworks */,
 				1A5BF34D1EDEF92800053F2F /* Resources */,
+				B82A3C97BB7C9CBC211014CF /* [CP] Embed Pods Frameworks */,
+				041B5D93A100417E67B1B751 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -100,6 +164,7 @@
 					1A5BF34E1EDEF92800053F2F = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 34GNZSDHKK;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -129,19 +194,78 @@
 			files = (
 				1A5BF3601EDEF92800053F2F /* LaunchScreen.storyboard in Resources */,
 				1A5BF35D1EDEF92800053F2F /* Assets.xcassets in Resources */,
+				1A20487B1EE2C4FB00FA8957 /* SignUp.storyboard in Resources */,
+				1A1A5BE31EDFF1B800753DFB /* GoogleService-Info.plist in Resources */,
+				1A1ABA0F1EE19BC60080B5AD /* Login.storyboard in Resources */,
 				1A5BF3581EDEF92800053F2F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		041B5D93A100417E67B1B751 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CricNp/Pods-CricNp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52B5941144783058AEE793E1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B82A3C97BB7C9CBC211014CF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-CricNp/Pods-CricNp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1A5BF34B1EDEF92800053F2F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A1ABA111EE19DE70080B5AD /* LoginViewController.swift in Sources */,
+				1A5BF36A1EDF028800053F2F /* SideMenuViewController.swift in Sources */,
+				1A2048881EE2FF4E00FA8957 /* Email+CoreDataClass.swift in Sources */,
+				1A20487D1EE2C7FF00FA8957 /* SignUpViewController.swift in Sources */,
+				1A1A5BDF1EDFDD9A00753DFB /* FetchVC.swift in Sources */,
 				1A5BF3551EDEF92800053F2F /* ViewController.swift in Sources */,
+				1A08FB131EDF0795009A297D /* SWRevealViewController.m in Sources */,
 				1A5BF35B1EDEF92800053F2F /* CricNp.xcdatamodeld in Sources */,
+				1A2048891EE2FF4E00FA8957 /* Email+CoreDataProperties.swift in Sources */,
+				1A18A0891EE68B8C004E998B /* SideMenuTableViewCell.swift in Sources */,
 				1A5BF3531EDEF92800053F2F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,26 +387,33 @@
 		};
 		1A5BF3651EDEF92800053F2F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B62866A2707A74EDD4EC9D9A /* Pods-CricNp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 34GNZSDHKK;
 				INFOPLIST_FILE = CricNp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CricNp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CricNp/CricNp-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
 		1A5BF3661EDEF92800053F2F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0ED181A0FB81532A616A389 /* Pods-CricNp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = 34GNZSDHKK;
 				INFOPLIST_FILE = CricNp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.CricNp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CricNp/CricNp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -306,6 +437,7 @@
 				1A5BF3661EDEF92800053F2F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
