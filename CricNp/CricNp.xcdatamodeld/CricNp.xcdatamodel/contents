@@ -3,7 +3,13 @@
     <entity name="Email" representedClassName=".Email" syncable="YES">
         <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="PlayerInfo" representedClassName=".PlayerInfo" syncable="YES">
+        <attribute name="character" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="imageUrl" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
     <elements>
         <element name="Email" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="PlayerInfo" positionX="-63" positionY="-9" width="128" height="90"/>
     </elements>
 </model>

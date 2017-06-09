@@ -108,9 +108,11 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         
         cell.isHighlighted = false
         cell.isSelected = false
-        let sb = self.storyboard
-        let nextVC = sb?.instantiateViewController(withIdentifier: "fetchVC")
-        self.revealViewController().pushFrontViewController(nextVC!, animated: true)
+        
+        let sb = UIStoryboard(name: "PlayersMenu", bundle: nil)
+        let playersMenuVC = sb.instantiateViewController(withIdentifier: "playersMenuVc")
+        let nav = UINavigationController(rootViewController: playersMenuVC)
+        self.revealViewController().pushFrontViewController(nav, animated: true)
         
     }
 

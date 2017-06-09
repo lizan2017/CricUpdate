@@ -9,5 +9,8 @@
 import UIKit
 
 class PlayerMenuCollectionViewCell: UICollectionViewCell {
+    @IBOutlet weak var playersImageView: UIImageView!
     
+    @IBOutlet weak var playerName: UILabel!
+    @IBOutlet weak var playerCharacter: UILabel!
 }

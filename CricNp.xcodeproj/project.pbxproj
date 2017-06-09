@@ -8,8 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		1A08FB131EDF0795009A297D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A08FB121EDF0795009A297D /* SWRevealViewController.m */; };
+		1A16A00F1EE9067C00DB690D /* PlayerMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16A00E1EE9067C00DB690D /* PlayerMenuCollectionViewCell.swift */; };
+		1A16A0161EE923EC00DB690D /* PlayerInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16A0141EE923EC00DB690D /* PlayerInfo+CoreDataClass.swift */; };
+		1A16A0171EE923EC00DB690D /* PlayerInfo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16A0151EE923EC00DB690D /* PlayerInfo+CoreDataProperties.swift */; };
+		1A184B1A1EE860960015C844 /* PlayersMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A184B191EE860960015C844 /* PlayersMenuViewController.swift */; };
+		1A184B1C1EE860A60015C844 /* PlayersMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A184B1B1EE860A60015C844 /* PlayersMenu.storyboard */; };
 		1A18A0891EE68B8C004E998B /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18A0881EE68B8C004E998B /* SideMenuTableViewCell.swift */; };
-		1A1A5BDF1EDFDD9A00753DFB /* FetchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A5BDE1EDFDD9A00753DFB /* FetchVC.swift */; };
 		1A1A5BE31EDFF1B800753DFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A5BE21EDFF1B800753DFB /* GoogleService-Info.plist */; };
 		1A1ABA0F1EE19BC60080B5AD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1ABA0E1EE19BC60080B5AD /* Login.storyboard */; };
 		1A1ABA111EE19DE70080B5AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1ABA101EE19DE70080B5AD /* LoginViewController.swift */; };
@@ -31,8 +35,12 @@
 		1A08FB101EDF0795009A297D /* CricNp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CricNp-Bridging-Header.h"; sourceTree = "<group>"; };
 		1A08FB111EDF0795009A297D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		1A08FB121EDF0795009A297D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		1A16A00E1EE9067C00DB690D /* PlayerMenuCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		1A16A0141EE923EC00DB690D /* PlayerInfo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlayerInfo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		1A16A0151EE923EC00DB690D /* PlayerInfo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PlayerInfo+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		1A184B191EE860960015C844 /* PlayersMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersMenuViewController.swift; sourceTree = "<group>"; };
+		1A184B1B1EE860A60015C844 /* PlayersMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayersMenu.storyboard; sourceTree = "<group>"; };
 		1A18A0881EE68B8C004E998B /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
-		1A1A5BDE1EDFDD9A00753DFB /* FetchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FetchVC.swift; sourceTree = "<group>"; };
 		1A1A5BE21EDFF1B800753DFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1A1ABA0E1EE19BC60080B5AD /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		1A1ABA101EE19DE70080B5AD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -91,13 +99,17 @@
 				1A5BF3541EDEF92800053F2F /* ViewController.swift */,
 				1A2048861EE2FF4E00FA8957 /* Email+CoreDataClass.swift */,
 				1A2048871EE2FF4E00FA8957 /* Email+CoreDataProperties.swift */,
+				1A16A0141EE923EC00DB690D /* PlayerInfo+CoreDataClass.swift */,
+				1A16A0151EE923EC00DB690D /* PlayerInfo+CoreDataProperties.swift */,
 				1A5BF3691EDF028800053F2F /* SideMenuViewController.swift */,
 				1A18A0881EE68B8C004E998B /* SideMenuTableViewCell.swift */,
-				1A1A5BDE1EDFDD9A00753DFB /* FetchVC.swift */,
 				1A5BF3561EDEF92800053F2F /* Main.storyboard */,
 				1A1ABA101EE19DE70080B5AD /* LoginViewController.swift */,
+				1A184B191EE860960015C844 /* PlayersMenuViewController.swift */,
+				1A16A00E1EE9067C00DB690D /* PlayerMenuCollectionViewCell.swift */,
 				1A1ABA0E1EE19BC60080B5AD /* Login.storyboard */,
 				1A20487A1EE2C4FB00FA8957 /* SignUp.storyboard */,
+				1A184B1B1EE860A60015C844 /* PlayersMenu.storyboard */,
 				1A20487C1EE2C7FF00FA8957 /* SignUpViewController.swift */,
 				1A5BF35C1EDEF92800053F2F /* Assets.xcassets */,
 				1A5BF35E1EDEF92800053F2F /* LaunchScreen.storyboard */,
@@ -198,6 +210,7 @@
 				1A1A5BE31EDFF1B800753DFB /* GoogleService-Info.plist in Resources */,
 				1A1ABA0F1EE19BC60080B5AD /* Login.storyboard in Resources */,
 				1A5BF3581EDEF92800053F2F /* Main.storyboard in Resources */,
+				1A184B1C1EE860A60015C844 /* PlayersMenu.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,13 +269,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1A16A0171EE923EC00DB690D /* PlayerInfo+CoreDataProperties.swift in Sources */,
 				1A1ABA111EE19DE70080B5AD /* LoginViewController.swift in Sources */,
 				1A5BF36A1EDF028800053F2F /* SideMenuViewController.swift in Sources */,
+				1A16A00F1EE9067C00DB690D /* PlayerMenuCollectionViewCell.swift in Sources */,
 				1A2048881EE2FF4E00FA8957 /* Email+CoreDataClass.swift in Sources */,
 				1A20487D1EE2C7FF00FA8957 /* SignUpViewController.swift in Sources */,
-				1A1A5BDF1EDFDD9A00753DFB /* FetchVC.swift in Sources */,
 				1A5BF3551EDEF92800053F2F /* ViewController.swift in Sources */,
+				1A184B1A1EE860960015C844 /* PlayersMenuViewController.swift in Sources */,
 				1A08FB131EDF0795009A297D /* SWRevealViewController.m in Sources */,
+				1A16A0161EE923EC00DB690D /* PlayerInfo+CoreDataClass.swift in Sources */,
 				1A5BF35B1EDEF92800053F2F /* CricNp.xcdatamodeld in Sources */,
 				1A2048891EE2FF4E00FA8957 /* Email+CoreDataProperties.swift in Sources */,
 				1A18A0891EE68B8C004E998B /* SideMenuTableViewCell.swift in Sources */,
