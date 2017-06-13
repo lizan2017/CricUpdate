@@ -9,11 +9,12 @@
 import UIKit
 import FirebaseStorage
 import FirebaseDatabase
+import SDWebImage
 
 class PlayersMenuViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     @IBOutlet weak var activvityIndicator: UIActivityIndicatorView!
     
-    @IBOutlet weak var hamburgerMenu: UIBarButtonItem!
+    
     var databaseHandel:FIRDatabaseHandle!
     var databaseRef:FIRDatabaseReference!
   
@@ -23,87 +24,80 @@ class PlayersMenuViewController: UIViewController, UICollectionViewDelegate, UIC
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.fetchUserData()
+
         self.navigationController?.navigationBar.barTintColor = UIColor.black
         self.navigationController?.navigationBar.tintColor = UIColor.white
         self.navigationController?.navigationBar.titleTextAttributes = [NSForegroundColorAttributeName : UIColor.white]
+        
+        playersMenuCollectionView.dataSource = self
+        playersMenuCollectionView.delegate = self
+        
+        let leftbutton = UIBarButtonItem(image: UIImage(named: "h6"), style: .plain, target: self, action: nil)
+        
+        self.navigationItem.leftBarButtonItem = leftbutton
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.white
+        
+        
         if self.revealViewController() != nil{
-        hamburgerMenu.target = self.revealViewController()
-        hamburgerMenu.action = #selector(SWRevealViewController.revealToggle(_:))
+            leftbutton.target = self.revealViewController()
+            leftbutton.action = #selector(SWRevealViewController.revealToggle(_:))
+            self.revealViewController().rearViewRevealWidth = 300.0
+            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
         }
-        
+
+
+        self.fetchPlayers()
     }
-    
-    func sideMenuBar(){
-        
-        self.revealViewController().revealToggle(animated: true)
-    }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        playerArray = []
-        
-
+        UIApplication.shared.statusBarStyle = .lightContent
     }
 
-    
-  
-    
-    func fetchUserData(){
+   private func fetchPlayers() {
         self.activvityIndicator.startAnimating()
         self.activvityIndicator.hidesWhenStopped = true
         databaseRef = FIRDatabase.database().reference()
         databaseRef.child("Players").observe(.value, with: {
             (snapshot) in
-          let snapshotData = snapshot.value as! NSDictionary
-        
-        let playersArray = snapshotData.allKeys as! Array<String>
+            self.activvityIndicator.stopAnimating()
+
+            let snapshotData = snapshot.value as! NSDictionary
+            let playersArray = snapshotData.allKeys as! Array<String>
+
+            if self.playerArray.count > 0 {
+              self.playerArray.removeAll()
+            }
+
             for i:Int in 0 ..< playersArray.count{
                 let playername = playersArray[i]
-                
                 let playerData = snapshotData[playername] as! [String:Any]
-                
-                
                 self.playerArray.append(playerData)
-                
             }
-          
-                    self.playersMenuCollectionView.delegate = self
-                    self.playersMenuCollectionView.dataSource = self
-            
-            
-            
-          
+            self.playersMenuCollectionView.reloadData()
         })
-        
-        
     }
     
-   
+    func playersImageTapped() {
+        
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        
         return playerArray.count
-        
-        
-        
     }
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PlayerMenuCollectionViewCell
         let playerDic = playerArray[indexPath.row]
         let url = playerDic["ImageURL"] as! String
-//        let url = imageUrl[indexPath.row]
+
         let contentURl = URL(string: url)
-        let data = try? Data(contentsOf: contentURl!)
-        DispatchQueue.main.async {
-            cell.playersImageView.image = UIImage(data: data!)
-        }
+        cell.playersImageView.sd_setImage(with: contentURl)
         cell.playerName.text = playerDic["Name"] as? String
         cell.playerCharacter.text = playerDic["Character"] as? String
 
@@ -112,11 +106,7 @@ class PlayersMenuViewController: UIViewController, UICollectionViewDelegate, UIC
         cell.playerCharacter.textColor = UIColor.white
         cell.playerName.textColor = UIColor.white
         cell.playersImageView.layer.borderWidth = 1.0
-        self.activvityIndicator.stopAnimating()
-        
+        cell.playersImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(playersImageTapped)))
         return cell
     }
-
-    
-
 }

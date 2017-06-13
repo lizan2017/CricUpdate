@@ -9,17 +9,36 @@
 import UIKit
 import CoreData
 import Firebase
+
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         FIRApp.configure()
-        
+        evaluateEntry()
         return true
+    }
+
+    private func evaluateEntry() {
+        do{
+            
+            let context = self.persistentContainer.viewContext
+            let emailData = try! context.fetch(Email.fetchRequest())
+            if emailData.count != 0 {
+                let sb = UIStoryboard(name: "PlayersMenu", bundle: nil)
+                let homeVc = sb.instantiateViewController(withIdentifier: "main")
+                
+                window?.rootViewController = homeVc
+            }else{
+                let sb = UIStoryboard(name: "Login", bundle: nil)
+                let loginVc = sb.instantiateViewController(withIdentifier: "loginVC")
+                
+                window?.rootViewController = loginVc
+            }
+        }
     }
 
     func applicationWillResignActive(_ application: UIApplication) {

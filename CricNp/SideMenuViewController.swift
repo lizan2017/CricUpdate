@@ -25,7 +25,7 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataSource = ["m1" , "m2", "m3", "m4", "Log Out"]
+        dataSource = ["Player List","Feeds" , "Fixtures", "Log Out"]
         
         self.profileImage.layer.borderColor = UIColor.gray.cgColor
         self.profileImage.layer.borderWidth = 2.0

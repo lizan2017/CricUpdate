@@ -54,27 +54,8 @@ class LoginViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-    override func viewDidLayoutSubviews() {
-        self.loggedIn()
-    }
-    
-    func loggedIn(){
-        
-        do{
-            let appdelegate = UIApplication.shared.delegate as! AppDelegate
-            let context = appdelegate.persistentContainer.viewContext
-            let emailData = try! context.fetch(Email.fetchRequest())
-            if emailData.count != 0{
-                
-                let sb = UIStoryboard(name: "Main", bundle: nil)
-                let nextVc = sb.instantiateViewController(withIdentifier: "main")
-                self.present(nextVc, animated: true, completion: nil)
-            }else{
-                return
-            }
-            
-        }
-    }
+  
+  
     
     
     @IBAction func loginBtn(_ sender: Any) {
@@ -82,9 +63,10 @@ class LoginViewController: UIViewController {
         if userEmailTextFiled.text != ""  && passwordTextField.text != "" {
             FIRAuth.auth()?.signIn(withEmail: userEmailTextFiled.text!, password: passwordTextField.text!, completion: {(user,error) in
                 if user != nil{
-                    let sb = UIStoryboard(name: "Main", bundle: nil)
-                    let nextVc = sb.instantiateViewController(withIdentifier: "main")
-                    self.present(nextVc, animated: true, completion: nil)
+                    let sb = UIStoryboard(name: "PlayersMenu", bundle: nil)
+                    let nextVc = sb.instantiateViewController(withIdentifier: "playersMenuVc")
+                    let nav = UINavigationController(rootViewController: nextVc)
+                    self.present(nav, animated: true, completion: nil)
                     let appdelegate = UIApplication.shared.delegate as! AppDelegate
                     let context = appdelegate.persistentContainer.viewContext
                     let emailEntity = Email(context: context)

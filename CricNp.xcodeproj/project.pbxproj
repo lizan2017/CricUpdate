@@ -14,6 +14,8 @@
 		1A184B1A1EE860960015C844 /* PlayersMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A184B191EE860960015C844 /* PlayersMenuViewController.swift */; };
 		1A184B1C1EE860A60015C844 /* PlayersMenu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A184B1B1EE860A60015C844 /* PlayersMenu.storyboard */; };
 		1A18A0891EE68B8C004E998B /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A18A0881EE68B8C004E998B /* SideMenuTableViewCell.swift */; };
+		1A1A43B31EEECF2900EEBF52 /* UserProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A43B21EEECF2900EEBF52 /* UserProfile.storyboard */; };
+		1A1A43B51EEED60500EEBF52 /* UserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1A43B41EEED60500EEBF52 /* UserProfileViewController.swift */; };
 		1A1A5BE31EDFF1B800753DFB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1A1A5BE21EDFF1B800753DFB /* GoogleService-Info.plist */; };
 		1A1ABA0F1EE19BC60080B5AD /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A1ABA0E1EE19BC60080B5AD /* Login.storyboard */; };
 		1A1ABA111EE19DE70080B5AD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A1ABA101EE19DE70080B5AD /* LoginViewController.swift */; };
@@ -41,6 +43,8 @@
 		1A184B191EE860960015C844 /* PlayersMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayersMenuViewController.swift; sourceTree = "<group>"; };
 		1A184B1B1EE860A60015C844 /* PlayersMenu.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayersMenu.storyboard; sourceTree = "<group>"; };
 		1A18A0881EE68B8C004E998B /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
+		1A1A43B21EEECF2900EEBF52 /* UserProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = UserProfile.storyboard; sourceTree = "<group>"; };
+		1A1A43B41EEED60500EEBF52 /* UserProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileViewController.swift; sourceTree = "<group>"; };
 		1A1A5BE21EDFF1B800753DFB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		1A1ABA0E1EE19BC60080B5AD /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		1A1ABA101EE19DE70080B5AD /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -108,6 +112,8 @@
 				1A184B191EE860960015C844 /* PlayersMenuViewController.swift */,
 				1A16A00E1EE9067C00DB690D /* PlayerMenuCollectionViewCell.swift */,
 				1A1ABA0E1EE19BC60080B5AD /* Login.storyboard */,
+				1A1A43B21EEECF2900EEBF52 /* UserProfile.storyboard */,
+				1A1A43B41EEED60500EEBF52 /* UserProfileViewController.swift */,
 				1A20487A1EE2C4FB00FA8957 /* SignUp.storyboard */,
 				1A184B1B1EE860A60015C844 /* PlayersMenu.storyboard */,
 				1A20487C1EE2C7FF00FA8957 /* SignUpViewController.swift */,
@@ -209,6 +215,7 @@
 				1A20487B1EE2C4FB00FA8957 /* SignUp.storyboard in Resources */,
 				1A1A5BE31EDFF1B800753DFB /* GoogleService-Info.plist in Resources */,
 				1A1ABA0F1EE19BC60080B5AD /* Login.storyboard in Resources */,
+				1A1A43B31EEECF2900EEBF52 /* UserProfile.storyboard in Resources */,
 				1A5BF3581EDEF92800053F2F /* Main.storyboard in Resources */,
 				1A184B1C1EE860A60015C844 /* PlayersMenu.storyboard in Resources */,
 			);
@@ -270,6 +277,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A16A0171EE923EC00DB690D /* PlayerInfo+CoreDataProperties.swift in Sources */,
+				1A1A43B51EEED60500EEBF52 /* UserProfileViewController.swift in Sources */,
 				1A1ABA111EE19DE70080B5AD /* LoginViewController.swift in Sources */,
 				1A5BF36A1EDF028800053F2F /* SideMenuViewController.swift in Sources */,
 				1A16A00F1EE9067C00DB690D /* PlayerMenuCollectionViewCell.swift in Sources */,
