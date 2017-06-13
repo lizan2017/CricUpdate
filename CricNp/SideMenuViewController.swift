@@ -25,7 +25,7 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        dataSource = ["m1" , "m2", "m3", "m4", "Log Out"]
+        dataSource = ["Player List","Feeds" , "Fixtures", "Log Out"]
         
         self.profileImage.layer.borderColor = UIColor.gray.cgColor
         self.profileImage.layer.borderWidth = 2.0
@@ -108,9 +108,11 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         
         cell.isHighlighted = false
         cell.isSelected = false
-        let sb = self.storyboard
-        let nextVC = sb?.instantiateViewController(withIdentifier: "fetchVC")
-        self.revealViewController().pushFrontViewController(nextVC!, animated: true)
+        
+        let sb = UIStoryboard(name: "PlayersMenu", bundle: nil)
+        let playersMenuVC = sb.instantiateViewController(withIdentifier: "playersMenuVc")
+        let nav = UINavigationController(rootViewController: playersMenuVC)
+        self.revealViewController().pushFrontViewController(nav, animated: true)
         
     }
 

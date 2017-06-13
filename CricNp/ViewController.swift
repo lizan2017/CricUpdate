@@ -16,17 +16,6 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         UIApplication.shared.statusBarStyle = .lightContent
-        let leftbutton = UIBarButtonItem(image: UIImage(named: "h6"), style: .plain, target: self, action: nil)
-        self.navigationItem.leftBarButtonItem = leftbutton
-        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.white
-        
-    
-        if self.revealViewController() != nil{
-            leftbutton.target = self.revealViewController()
-            leftbutton.action = #selector(SWRevealViewController.revealToggle(_:))
-            self.revealViewController().rearViewRevealWidth = 300.0
-            self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
-        }
 
     }
 
