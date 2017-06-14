@@ -78,9 +78,6 @@ class PlayersMenuViewController: UIViewController, UICollectionViewDelegate, UIC
         })
     }
     
-    func playersImageTapped() {
-        
-    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -106,7 +103,21 @@ class PlayersMenuViewController: UIViewController, UICollectionViewDelegate, UIC
         cell.playerCharacter.textColor = UIColor.white
         cell.playerName.textColor = UIColor.white
         cell.playersImageView.layer.borderWidth = 1.0
-        cell.playersImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(playersImageTapped)))
+        
         return cell
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let cell = collectionView.cellForItem(at: indexPath) as! PlayerMenuCollectionViewCell
+        let sb = UIStoryboard(name: "PlayerProfile", bundle: nil)
+        
+        let playerProfileVC = sb.instantiateViewController(withIdentifier: "playerProfileVC") as! PlayerProfileViewController
+        let url = cell.playersImageView.sd_imageURL()!
+        
+
+        playerProfileVC.playerImageView.sd_setImage(with: url)
+        playerProfileVC.playerNameLabel.text = cell.playerName.text
+        playerProfileVC.playerCharacterLabel.text = cell.playerCharacter.text
+        self.navigationController?.pushViewController(playerProfileVC, animated: true)
     }
 }

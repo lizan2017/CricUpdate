@@ -30,6 +30,8 @@
 		1A5BF35D1EDEF92800053F2F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A5BF35C1EDEF92800053F2F /* Assets.xcassets */; };
 		1A5BF3601EDEF92800053F2F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5BF35E1EDEF92800053F2F /* LaunchScreen.storyboard */; };
 		1A5BF36A1EDF028800053F2F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BF3691EDF028800053F2F /* SideMenuViewController.swift */; };
+		1A91F0491EF0275500FAA7D4 /* PlayerProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A91F0481EF0275500FAA7D4 /* PlayerProfile.storyboard */; };
+		1A91F04B1EF0281900FAA7D4 /* PlayerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F04A1EF0281900FAA7D4 /* PlayerProfileViewController.swift */; };
 		851990C15C859E48BC051B4D /* Pods_CricNp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9154975EAF88E30DAA6842 /* Pods_CricNp.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +63,8 @@
 		1A5BF35F1EDEF92800053F2F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1A5BF3611EDEF92800053F2F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1A5BF3691EDF028800053F2F /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
+		1A91F0481EF0275500FAA7D4 /* PlayerProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayerProfile.storyboard; sourceTree = "<group>"; };
+		1A91F04A1EF0281900FAA7D4 /* PlayerProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerProfileViewController.swift; sourceTree = "<group>"; };
 		8E9154975EAF88E30DAA6842 /* Pods_CricNp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CricNp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62866A2707A74EDD4EC9D9A /* Pods-CricNp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricNp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CricNp/Pods-CricNp.debug.xcconfig"; sourceTree = "<group>"; };
 		E0ED181A0FB81532A616A389 /* Pods-CricNp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricNp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CricNp/Pods-CricNp.release.xcconfig"; sourceTree = "<group>"; };
@@ -99,24 +103,10 @@
 		1A5BF3511EDEF92800053F2F /* CricNp */ = {
 			isa = PBXGroup;
 			children = (
+				1A91F04E1EF0286900FAA7D4 /* Modals */,
+				1A91F04D1EF0284400FAA7D4 /* Controllers */,
+				1A91F04C1EF0282C00FAA7D4 /* Views */,
 				1A5BF3521EDEF92800053F2F /* AppDelegate.swift */,
-				1A5BF3541EDEF92800053F2F /* ViewController.swift */,
-				1A2048861EE2FF4E00FA8957 /* Email+CoreDataClass.swift */,
-				1A2048871EE2FF4E00FA8957 /* Email+CoreDataProperties.swift */,
-				1A16A0141EE923EC00DB690D /* PlayerInfo+CoreDataClass.swift */,
-				1A16A0151EE923EC00DB690D /* PlayerInfo+CoreDataProperties.swift */,
-				1A5BF3691EDF028800053F2F /* SideMenuViewController.swift */,
-				1A18A0881EE68B8C004E998B /* SideMenuTableViewCell.swift */,
-				1A5BF3561EDEF92800053F2F /* Main.storyboard */,
-				1A1ABA101EE19DE70080B5AD /* LoginViewController.swift */,
-				1A184B191EE860960015C844 /* PlayersMenuViewController.swift */,
-				1A16A00E1EE9067C00DB690D /* PlayerMenuCollectionViewCell.swift */,
-				1A1ABA0E1EE19BC60080B5AD /* Login.storyboard */,
-				1A1A43B21EEECF2900EEBF52 /* UserProfile.storyboard */,
-				1A1A43B41EEED60500EEBF52 /* UserProfileViewController.swift */,
-				1A20487A1EE2C4FB00FA8957 /* SignUp.storyboard */,
-				1A184B1B1EE860A60015C844 /* PlayersMenu.storyboard */,
-				1A20487C1EE2C7FF00FA8957 /* SignUpViewController.swift */,
 				1A5BF35C1EDEF92800053F2F /* Assets.xcassets */,
 				1A5BF35E1EDEF92800053F2F /* LaunchScreen.storyboard */,
 				1A08FB111EDF0795009A297D /* SWRevealViewController.h */,
@@ -127,6 +117,46 @@
 				1A08FB101EDF0795009A297D /* CricNp-Bridging-Header.h */,
 			);
 			path = CricNp;
+			sourceTree = "<group>";
+		};
+		1A91F04C1EF0282C00FAA7D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1A91F0481EF0275500FAA7D4 /* PlayerProfile.storyboard */,
+				1A5BF3561EDEF92800053F2F /* Main.storyboard */,
+				1A1ABA0E1EE19BC60080B5AD /* Login.storyboard */,
+				1A20487A1EE2C4FB00FA8957 /* SignUp.storyboard */,
+				1A184B1B1EE860A60015C844 /* PlayersMenu.storyboard */,
+				1A1A43B21EEECF2900EEBF52 /* UserProfile.storyboard */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1A91F04D1EF0284400FAA7D4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1A5BF3541EDEF92800053F2F /* ViewController.swift */,
+				1A5BF3691EDF028800053F2F /* SideMenuViewController.swift */,
+				1A18A0881EE68B8C004E998B /* SideMenuTableViewCell.swift */,
+				1A91F04A1EF0281900FAA7D4 /* PlayerProfileViewController.swift */,
+				1A1ABA101EE19DE70080B5AD /* LoginViewController.swift */,
+				1A184B191EE860960015C844 /* PlayersMenuViewController.swift */,
+				1A16A00E1EE9067C00DB690D /* PlayerMenuCollectionViewCell.swift */,
+				1A1A43B41EEED60500EEBF52 /* UserProfileViewController.swift */,
+				1A20487C1EE2C7FF00FA8957 /* SignUpViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		1A91F04E1EF0286900FAA7D4 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				1A2048861EE2FF4E00FA8957 /* Email+CoreDataClass.swift */,
+				1A2048871EE2FF4E00FA8957 /* Email+CoreDataProperties.swift */,
+				1A16A0141EE923EC00DB690D /* PlayerInfo+CoreDataClass.swift */,
+				1A16A0151EE923EC00DB690D /* PlayerInfo+CoreDataProperties.swift */,
+			);
+			name = Modals;
 			sourceTree = "<group>";
 		};
 		5366F253FE2DE6B939A1BA73 /* Pods */ = {
@@ -218,6 +248,7 @@
 				1A1A43B31EEECF2900EEBF52 /* UserProfile.storyboard in Resources */,
 				1A5BF3581EDEF92800053F2F /* Main.storyboard in Resources */,
 				1A184B1C1EE860A60015C844 /* PlayersMenu.storyboard in Resources */,
+				1A91F0491EF0275500FAA7D4 /* PlayerProfile.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,6 +318,7 @@
 				1A184B1A1EE860960015C844 /* PlayersMenuViewController.swift in Sources */,
 				1A08FB131EDF0795009A297D /* SWRevealViewController.m in Sources */,
 				1A16A0161EE923EC00DB690D /* PlayerInfo+CoreDataClass.swift in Sources */,
+				1A91F04B1EF0281900FAA7D4 /* PlayerProfileViewController.swift in Sources */,
 				1A5BF35B1EDEF92800053F2F /* CricNp.xcdatamodeld in Sources */,
 				1A2048891EE2FF4E00FA8957 /* Email+CoreDataProperties.swift in Sources */,
 				1A18A0891EE68B8C004E998B /* SideMenuTableViewCell.swift in Sources */,
