@@ -113,11 +113,9 @@ class PlayersMenuViewController: UIViewController, UICollectionViewDelegate, UIC
         
         let playerProfileVC = sb.instantiateViewController(withIdentifier: "playerProfileVC") as! PlayerProfileViewController
         let url = cell.playersImageView.sd_imageURL()!
-        
-
-        playerProfileVC.playerImageView.sd_setImage(with: url)
-        playerProfileVC.playerNameLabel.text = cell.playerName.text
-        playerProfileVC.playerCharacterLabel.text = cell.playerCharacter.text
+        playerProfileVC.imageUrl = String(describing: url)
+        playerProfileVC.playerName = cell.playerName.text
+        playerProfileVC.playerCharacter = cell.playerCharacter.text
         self.navigationController?.pushViewController(playerProfileVC, animated: true)
     }
 }

@@ -13,12 +13,20 @@ class PlayerProfileViewController: UIViewController {
 
     @IBOutlet weak var playerCharacterLabel: UILabel!
     @IBOutlet weak var playerNameLabel: UILabel!
+    
+    var imageUrl:String?
+    var playerName:String?
+    var playerCharacter:String?
     override func viewDidLoad() {
         super.viewDidLoad()
         self.title = "Player's Profile"
         // Do any additional setup after loading the view.
         
         playerImageView.layer.cornerRadius = 75.0
+        let url = URL(string: imageUrl!)
+        playerImageView.sd_setImage(with: url)
+        playerCharacterLabel.text = playerCharacter
+        playerNameLabel.text =  playerName
         
         
     }

@@ -46,7 +46,12 @@ class LoginViewController: UIViewController {
         facebookImg.layer.borderColor = UIColor.white.cgColor
         facebookImg.layer.borderWidth = 1.0
         facebookImg.layer.cornerRadius = 12.5
-        
+        let tap:UIGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dissmissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dissmissKeyboard(){
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -64,9 +69,8 @@ class LoginViewController: UIViewController {
             FIRAuth.auth()?.signIn(withEmail: userEmailTextFiled.text!, password: passwordTextField.text!, completion: {(user,error) in
                 if user != nil{
                     let sb = UIStoryboard(name: "PlayersMenu", bundle: nil)
-                    let nextVc = sb.instantiateViewController(withIdentifier: "playersMenuVc")
-                    let nav = UINavigationController(rootViewController: nextVc)
-                    self.present(nav, animated: true, completion: nil)
+                    let nextVc = sb.instantiateViewController(withIdentifier: "main")
+                    self.present(nextVc, animated: true, completion: nil)
                     let appdelegate = UIApplication.shared.delegate as! AppDelegate
                     let context = appdelegate.persistentContainer.viewContext
                     let emailEntity = Email(context: context)

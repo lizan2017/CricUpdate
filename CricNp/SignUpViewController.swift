@@ -63,6 +63,13 @@ class SignUpViewController: UIViewController {
         passTxtField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSForegroundColorAttributeName : UIColor.white])
         cPassTxtField.attributedPlaceholder = NSAttributedString(string: "Confirm Password", attributes: [NSForegroundColorAttributeName : UIColor.white])
         // Do any additional setup after loading the view.
+        
+        let tap:UIGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(dissmissKeyboard))
+        view.addGestureRecognizer(tap)
+    }
+    
+    func dissmissKeyboard(){
+        view.endEditing(true)
     }
 
     override func didReceiveMemoryWarning() {
