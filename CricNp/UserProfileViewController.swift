@@ -140,6 +140,7 @@ class UserProfileViewController: UIViewController ,UIImagePickerControllerDelega
         self.databaseRef.child("users").child((FIRAuth.auth()?.currentUser?.uid)!).child("Email").setValue(emailTextField.text)
         FIRAuth.auth()?.currentUser?.updateEmail(emailTextField.text!, completion: {
             (error) in
+            print(error)
             let alert = UIAlertController(title: "Sucess", message: "Email updated sucessfully!! Please Login Again", preferredStyle: .alert)
             let alertAction = UIAlertAction(title: "Ok", style: .default, handler: {_ in
                 try? FIRAuth.auth()?.signOut()

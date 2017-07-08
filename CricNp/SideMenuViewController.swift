@@ -61,16 +61,20 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         ref = FIRDatabase.database().reference()
         ref.child("users").child((FIRAuth.auth()?.currentUser?.uid)!).observeSingleEvent(of: .value, with: {
             (data) in
-            let userData = data.value as! [String:String]
             
-            self.userNameLabel.text = userData["First name"]
-            if userData["ImageUrl"] != nil{
-            let url = URL(string: userData["ImageUrl"]!)
-            self.profileImage.sd_setImage(with: url)
+            print("user data \(data.value!)")
+            
+            
+            let userData = data.value as! [String:Any]
+            
+            self.userNameLabel.text = userData["First name"] as? String
+            if (userData["ImageUrl"] as? String) != nil{
+              let url = URL(string: (userData["ImageUrl"] as! String))
+               self.profileImage.sd_setImage(with: url)
             }else{
                 return
             }
-            self.emailLabel.text = userData["Email"]
+            self.emailLabel.text = userData["Email"] as? String
         })
     }
     
@@ -128,17 +132,29 @@ class SideMenuViewController: UIViewController, UITableViewDelegate, UITableView
         let cell = tableView.cellForRow(at: indexPath) as! SideMenuTableViewCell
         if cell.menuItemLabel.text == "Log Out"{
             self.fetchDataAndDelete()
-            
+            }
+        if cell.menuItemLabel.text == "Fixtures"{
+            let sb = UIStoryboard(name: "Fixture", bundle: nil)
+            let fixturesVc = sb.instantiateViewController(withIdentifier: "fixturesVc")
+            let nav = UINavigationController(rootViewController: fixturesVc)
+            self.revealViewController().pushFrontViewController(nav, animated: true)
         }
         
         cell.isHighlighted = false
         cell.isSelected = false
         
+        if cell.menuItemLabel.text == "Player List"{
         let sb = UIStoryboard(name: "PlayersMenu", bundle: nil)
         let playersMenuVC = sb.instantiateViewController(withIdentifier: "playersMenuVc")
         let nav = UINavigationController(rootViewController: playersMenuVC)
         self.revealViewController().pushFrontViewController(nav, animated: true)
-        
+        }
+        if cell.menuItemLabel.text == "Feeds"{
+            let sb = UIStoryboard(name: "News", bundle: nil)
+            let playersMenuVC = sb.instantiateViewController(withIdentifier: "newsVc")
+            let nav = UINavigationController(rootViewController: playersMenuVC)
+            self.revealViewController().pushFrontViewController(nav, animated: true)
+        }
     }
 
 }

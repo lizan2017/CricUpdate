@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0622B61F1106A4002F9E19 /* NewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0622B51F1106A4002F9E19 /* NewsViewController.swift */; };
+		1A0622B81F110764002F9E19 /* News.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A0622B71F110764002F9E19 /* News.storyboard */; };
+		1A0622BA1F1109EE002F9E19 /* NewsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0622B91F1109EE002F9E19 /* NewsTableViewCell.swift */; };
 		1A08FB131EDF0795009A297D /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A08FB121EDF0795009A297D /* SWRevealViewController.m */; };
 		1A16A00F1EE9067C00DB690D /* PlayerMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16A00E1EE9067C00DB690D /* PlayerMenuCollectionViewCell.swift */; };
 		1A16A0161EE923EC00DB690D /* PlayerInfo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A16A0141EE923EC00DB690D /* PlayerInfo+CoreDataClass.swift */; };
@@ -32,10 +35,16 @@
 		1A5BF36A1EDF028800053F2F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BF3691EDF028800053F2F /* SideMenuViewController.swift */; };
 		1A91F0491EF0275500FAA7D4 /* PlayerProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A91F0481EF0275500FAA7D4 /* PlayerProfile.storyboard */; };
 		1A91F04B1EF0281900FAA7D4 /* PlayerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F04A1EF0281900FAA7D4 /* PlayerProfileViewController.swift */; };
+		1ABBD6921EFD4EC000098342 /* Fixture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABBD68F1EFD4EC000098342 /* Fixture.storyboard */; };
+		1ABBD6931EFD4EC000098342 /* FixturesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBD6901EFD4EC000098342 /* FixturesTableViewCell.swift */; };
+		1ABBD6941EFD4EC000098342 /* FixturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBD6911EFD4EC000098342 /* FixturesViewController.swift */; };
 		851990C15C859E48BC051B4D /* Pods_CricNp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9154975EAF88E30DAA6842 /* Pods_CricNp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A0622B51F1106A4002F9E19 /* NewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsViewController.swift; sourceTree = "<group>"; };
+		1A0622B71F110764002F9E19 /* News.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = News.storyboard; sourceTree = "<group>"; };
+		1A0622B91F1109EE002F9E19 /* NewsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsTableViewCell.swift; sourceTree = "<group>"; };
 		1A08FB101EDF0795009A297D /* CricNp-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CricNp-Bridging-Header.h"; sourceTree = "<group>"; };
 		1A08FB111EDF0795009A297D /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		1A08FB121EDF0795009A297D /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -65,6 +74,9 @@
 		1A5BF3691EDF028800053F2F /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		1A91F0481EF0275500FAA7D4 /* PlayerProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayerProfile.storyboard; sourceTree = "<group>"; };
 		1A91F04A1EF0281900FAA7D4 /* PlayerProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerProfileViewController.swift; sourceTree = "<group>"; };
+		1ABBD68F1EFD4EC000098342 /* Fixture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Fixture.storyboard; path = ../../../../Downloads/Fixture.storyboard; sourceTree = "<group>"; };
+		1ABBD6901EFD4EC000098342 /* FixturesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FixturesTableViewCell.swift; path = ../../../../Downloads/FixturesTableViewCell.swift; sourceTree = "<group>"; };
+		1ABBD6911EFD4EC000098342 /* FixturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FixturesViewController.swift; path = ../../../../Downloads/FixturesViewController.swift; sourceTree = "<group>"; };
 		8E9154975EAF88E30DAA6842 /* Pods_CricNp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CricNp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62866A2707A74EDD4EC9D9A /* Pods-CricNp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricNp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CricNp/Pods-CricNp.debug.xcconfig"; sourceTree = "<group>"; };
 		E0ED181A0FB81532A616A389 /* Pods-CricNp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricNp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CricNp/Pods-CricNp.release.xcconfig"; sourceTree = "<group>"; };
@@ -122,12 +134,14 @@
 		1A91F04C1EF0282C00FAA7D4 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				1ABBD68F1EFD4EC000098342 /* Fixture.storyboard */,
 				1A91F0481EF0275500FAA7D4 /* PlayerProfile.storyboard */,
 				1A5BF3561EDEF92800053F2F /* Main.storyboard */,
 				1A1ABA0E1EE19BC60080B5AD /* Login.storyboard */,
 				1A20487A1EE2C4FB00FA8957 /* SignUp.storyboard */,
 				1A184B1B1EE860A60015C844 /* PlayersMenu.storyboard */,
 				1A1A43B21EEECF2900EEBF52 /* UserProfile.storyboard */,
+				1A0622B71F110764002F9E19 /* News.storyboard */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -136,6 +150,8 @@
 			isa = PBXGroup;
 			children = (
 				1A5BF3541EDEF92800053F2F /* ViewController.swift */,
+				1ABBD6901EFD4EC000098342 /* FixturesTableViewCell.swift */,
+				1ABBD6911EFD4EC000098342 /* FixturesViewController.swift */,
 				1A5BF3691EDF028800053F2F /* SideMenuViewController.swift */,
 				1A18A0881EE68B8C004E998B /* SideMenuTableViewCell.swift */,
 				1A91F04A1EF0281900FAA7D4 /* PlayerProfileViewController.swift */,
@@ -143,7 +159,9 @@
 				1A184B191EE860960015C844 /* PlayersMenuViewController.swift */,
 				1A16A00E1EE9067C00DB690D /* PlayerMenuCollectionViewCell.swift */,
 				1A1A43B41EEED60500EEBF52 /* UserProfileViewController.swift */,
+				1A0622B51F1106A4002F9E19 /* NewsViewController.swift */,
 				1A20487C1EE2C7FF00FA8957 /* SignUpViewController.swift */,
+				1A0622B91F1109EE002F9E19 /* NewsTableViewCell.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -240,10 +258,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1ABBD6921EFD4EC000098342 /* Fixture.storyboard in Resources */,
 				1A5BF3601EDEF92800053F2F /* LaunchScreen.storyboard in Resources */,
 				1A5BF35D1EDEF92800053F2F /* Assets.xcassets in Resources */,
 				1A20487B1EE2C4FB00FA8957 /* SignUp.storyboard in Resources */,
 				1A1A5BE31EDFF1B800753DFB /* GoogleService-Info.plist in Resources */,
+				1A0622B81F110764002F9E19 /* News.storyboard in Resources */,
 				1A1ABA0F1EE19BC60080B5AD /* Login.storyboard in Resources */,
 				1A1A43B31EEECF2900EEBF52 /* UserProfile.storyboard in Resources */,
 				1A5BF3581EDEF92800053F2F /* Main.storyboard in Resources */,
@@ -309,17 +329,21 @@
 			files = (
 				1A16A0171EE923EC00DB690D /* PlayerInfo+CoreDataProperties.swift in Sources */,
 				1A1A43B51EEED60500EEBF52 /* UserProfileViewController.swift in Sources */,
+				1A0622BA1F1109EE002F9E19 /* NewsTableViewCell.swift in Sources */,
 				1A1ABA111EE19DE70080B5AD /* LoginViewController.swift in Sources */,
 				1A5BF36A1EDF028800053F2F /* SideMenuViewController.swift in Sources */,
 				1A16A00F1EE9067C00DB690D /* PlayerMenuCollectionViewCell.swift in Sources */,
 				1A2048881EE2FF4E00FA8957 /* Email+CoreDataClass.swift in Sources */,
 				1A20487D1EE2C7FF00FA8957 /* SignUpViewController.swift in Sources */,
+				1A0622B61F1106A4002F9E19 /* NewsViewController.swift in Sources */,
 				1A5BF3551EDEF92800053F2F /* ViewController.swift in Sources */,
 				1A184B1A1EE860960015C844 /* PlayersMenuViewController.swift in Sources */,
 				1A08FB131EDF0795009A297D /* SWRevealViewController.m in Sources */,
 				1A16A0161EE923EC00DB690D /* PlayerInfo+CoreDataClass.swift in Sources */,
 				1A91F04B1EF0281900FAA7D4 /* PlayerProfileViewController.swift in Sources */,
+				1ABBD6931EFD4EC000098342 /* FixturesTableViewCell.swift in Sources */,
 				1A5BF35B1EDEF92800053F2F /* CricNp.xcdatamodeld in Sources */,
+				1ABBD6941EFD4EC000098342 /* FixturesViewController.swift in Sources */,
 				1A2048891EE2FF4E00FA8957 /* Email+CoreDataProperties.swift in Sources */,
 				1A18A0891EE68B8C004E998B /* SideMenuTableViewCell.swift in Sources */,
 				1A5BF3531EDEF92800053F2F /* AppDelegate.swift in Sources */,
