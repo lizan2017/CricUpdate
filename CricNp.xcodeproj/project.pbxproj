@@ -35,9 +35,15 @@
 		1A5BF36A1EDF028800053F2F /* SideMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5BF3691EDF028800053F2F /* SideMenuViewController.swift */; };
 		1A91F0491EF0275500FAA7D4 /* PlayerProfile.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A91F0481EF0275500FAA7D4 /* PlayerProfile.storyboard */; };
 		1A91F04B1EF0281900FAA7D4 /* PlayerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A91F04A1EF0281900FAA7D4 /* PlayerProfileViewController.swift */; };
+<<<<<<< HEAD
 		1ABBD6921EFD4EC000098342 /* Fixture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ABBD68F1EFD4EC000098342 /* Fixture.storyboard */; };
 		1ABBD6931EFD4EC000098342 /* FixturesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBD6901EFD4EC000098342 /* FixturesTableViewCell.swift */; };
 		1ABBD6941EFD4EC000098342 /* FixturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ABBD6911EFD4EC000098342 /* FixturesViewController.swift */; };
+=======
+		2416FECF1EFAA88800BD7D30 /* FixturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2416FECE1EFAA88800BD7D30 /* FixturesViewController.swift */; };
+		2416FED11EFAA94900BD7D30 /* FixturesTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2416FED01EFAA94900BD7D30 /* FixturesTableViewCell.swift */; };
+		2485FEF71EF9622A00B963BD /* Fixture.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2485FEF61EF9622A00B963BD /* Fixture.storyboard */; };
+>>>>>>> 88e0e4e24824198c5e7fc3dd6cab61441bdf2afa
 		851990C15C859E48BC051B4D /* Pods_CricNp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8E9154975EAF88E30DAA6842 /* Pods_CricNp.framework */; };
 /* End PBXBuildFile section */
 
@@ -74,9 +80,15 @@
 		1A5BF3691EDF028800053F2F /* SideMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuViewController.swift; sourceTree = "<group>"; };
 		1A91F0481EF0275500FAA7D4 /* PlayerProfile.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlayerProfile.storyboard; sourceTree = "<group>"; };
 		1A91F04A1EF0281900FAA7D4 /* PlayerProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerProfileViewController.swift; sourceTree = "<group>"; };
+<<<<<<< HEAD
 		1ABBD68F1EFD4EC000098342 /* Fixture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Fixture.storyboard; path = ../../../../Downloads/Fixture.storyboard; sourceTree = "<group>"; };
 		1ABBD6901EFD4EC000098342 /* FixturesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FixturesTableViewCell.swift; path = ../../../../Downloads/FixturesTableViewCell.swift; sourceTree = "<group>"; };
 		1ABBD6911EFD4EC000098342 /* FixturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FixturesViewController.swift; path = ../../../../Downloads/FixturesViewController.swift; sourceTree = "<group>"; };
+=======
+		2416FECE1EFAA88800BD7D30 /* FixturesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixturesViewController.swift; sourceTree = "<group>"; };
+		2416FED01EFAA94900BD7D30 /* FixturesTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FixturesTableViewCell.swift; sourceTree = "<group>"; };
+		2485FEF61EF9622A00B963BD /* Fixture.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Fixture.storyboard; path = ../Fixture.storyboard; sourceTree = "<group>"; };
+>>>>>>> 88e0e4e24824198c5e7fc3dd6cab61441bdf2afa
 		8E9154975EAF88E30DAA6842 /* Pods_CricNp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CricNp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B62866A2707A74EDD4EC9D9A /* Pods-CricNp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricNp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CricNp/Pods-CricNp.debug.xcconfig"; sourceTree = "<group>"; };
 		E0ED181A0FB81532A616A389 /* Pods-CricNp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CricNp.release.xcconfig"; path = "Pods/Target Support Files/Pods-CricNp/Pods-CricNp.release.xcconfig"; sourceTree = "<group>"; };
@@ -140,6 +152,7 @@
 				1A1ABA0E1EE19BC60080B5AD /* Login.storyboard */,
 				1A20487A1EE2C4FB00FA8957 /* SignUp.storyboard */,
 				1A184B1B1EE860A60015C844 /* PlayersMenu.storyboard */,
+				2485FEF61EF9622A00B963BD /* Fixture.storyboard */,
 				1A1A43B21EEECF2900EEBF52 /* UserProfile.storyboard */,
 				1A0622B71F110764002F9E19 /* News.storyboard */,
 			);
@@ -161,7 +174,12 @@
 				1A1A43B41EEED60500EEBF52 /* UserProfileViewController.swift */,
 				1A0622B51F1106A4002F9E19 /* NewsViewController.swift */,
 				1A20487C1EE2C7FF00FA8957 /* SignUpViewController.swift */,
+<<<<<<< HEAD
 				1A0622B91F1109EE002F9E19 /* NewsTableViewCell.swift */,
+=======
+				2416FECE1EFAA88800BD7D30 /* FixturesViewController.swift */,
+				2416FED01EFAA94900BD7D30 /* FixturesTableViewCell.swift */,
+>>>>>>> 88e0e4e24824198c5e7fc3dd6cab61441bdf2afa
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -229,7 +247,7 @@
 				TargetAttributes = {
 					1A5BF34E1EDEF92800053F2F = {
 						CreatedOnToolsVersion = 8.2.1;
-						DevelopmentTeam = 974PYRN6CZ;
+						DevelopmentTeam = 8FVUQ89F2G;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -258,7 +276,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				1ABBD6921EFD4EC000098342 /* Fixture.storyboard in Resources */,
+=======
+				2485FEF71EF9622A00B963BD /* Fixture.storyboard in Resources */,
+>>>>>>> 88e0e4e24824198c5e7fc3dd6cab61441bdf2afa
 				1A5BF3601EDEF92800053F2F /* LaunchScreen.storyboard in Resources */,
 				1A5BF35D1EDEF92800053F2F /* Assets.xcassets in Resources */,
 				1A20487B1EE2C4FB00FA8957 /* SignUp.storyboard in Resources */,
@@ -333,6 +355,7 @@
 				1A1ABA111EE19DE70080B5AD /* LoginViewController.swift in Sources */,
 				1A5BF36A1EDF028800053F2F /* SideMenuViewController.swift in Sources */,
 				1A16A00F1EE9067C00DB690D /* PlayerMenuCollectionViewCell.swift in Sources */,
+				2416FED11EFAA94900BD7D30 /* FixturesTableViewCell.swift in Sources */,
 				1A2048881EE2FF4E00FA8957 /* Email+CoreDataClass.swift in Sources */,
 				1A20487D1EE2C7FF00FA8957 /* SignUpViewController.swift in Sources */,
 				1A0622B61F1106A4002F9E19 /* NewsViewController.swift in Sources */,
@@ -341,7 +364,11 @@
 				1A08FB131EDF0795009A297D /* SWRevealViewController.m in Sources */,
 				1A16A0161EE923EC00DB690D /* PlayerInfo+CoreDataClass.swift in Sources */,
 				1A91F04B1EF0281900FAA7D4 /* PlayerProfileViewController.swift in Sources */,
+<<<<<<< HEAD
 				1ABBD6931EFD4EC000098342 /* FixturesTableViewCell.swift in Sources */,
+=======
+				2416FECF1EFAA88800BD7D30 /* FixturesViewController.swift in Sources */,
+>>>>>>> 88e0e4e24824198c5e7fc3dd6cab61441bdf2afa
 				1A5BF35B1EDEF92800053F2F /* CricNp.xcdatamodeld in Sources */,
 				1ABBD6941EFD4EC000098342 /* FixturesViewController.swift in Sources */,
 				1A2048891EE2FF4E00FA8957 /* Email+CoreDataProperties.swift in Sources */,
@@ -471,10 +498,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 974PYRN6CZ;
+				DEVELOPMENT_TEAM = 8FVUQ89F2G;
 				INFOPLIST_FILE = CricNp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CricNp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rojan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CricNp/CricNp-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -488,10 +515,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				DEVELOPMENT_TEAM = 974PYRN6CZ;
+				DEVELOPMENT_TEAM = 8FVUQ89F2G;
 				INFOPLIST_FILE = CricNp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.CricNp;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rojan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "CricNp/CricNp-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
